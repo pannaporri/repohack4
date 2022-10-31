@@ -92,17 +92,10 @@ public:
 	}
 };
 
-// Driver's code
+
 int main()
 {
-	/* Let us create following weighted graph
-				10
-			0--------1
-			| \	 |
-			6| 5\ |15
-			|	 \ |
-			2--------3
-				4	 */
+	
 	Graph g(4);
 	g.addEdge(0, 1, 10);
 	g.addEdge(1, 3, 15);
@@ -110,7 +103,7 @@ int main()
 	g.addEdge(2, 0, 6);
 	g.addEdge(0, 3, 5);
 
-	// Function call
+	
 	g.kruskals_mst();
 	return 0;
 }
